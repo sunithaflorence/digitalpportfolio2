@@ -1,0 +1,149 @@
+<html>
+    <head>
+        <title>
+            Sunitha portfolio
+        </title>
+        <style>
+            body{
+                font-family: Arial, Helvetica, sans-serif;
+                margin: 0%;
+                padding: 0%;
+                background-color: aliceblue;
+            }
+            header{
+                background-color: black;
+                color: white;
+                text-align: center;
+                padding: 2rem 0;
+                position:relative:
+            }
+            .header-content h1{
+                font-size: 3.5rem;
+            }
+            .profile-picture{
+                width:100px;
+                height: 100px;
+                border radius:75%;
+                object-fit:cover;
+                position:absolute;
+                top: 75px;
+                left:75px;
+             }
+             nav{
+                background-color: black;
+                color: aliceblue;
+             text-align: center;
+             }
+             nav ul{
+                list-style-type: none;
+                padding: 0;
+             }
+             nav ul li{
+                display: inline;
+                margin: 0 20px;
+             }
+             .section-content{
+                background-color: white;
+                padding:2rem;
+                margin:1rem;
+                border: radius 20px;
+                box-shadow: 0 0 10 px rgba(0,0,0,0.1);
+
+             }
+             .download button{
+                background-color: #555;
+             }
+              footer{
+                text-align:center;
+                padding: 1rem 0;
+                background-color: #333;
+                color: #fff;
+              }
+              ul{
+                list-style-type: disc;
+                padding-left: 20px;
+              }
+</style>
+        <body>
+<header>
+    <div class="header-content">
+        <img src="C:\Users\sunit\Downloads\WhatsApp Image 2023-10-19 at 9.52.34 AM.jpeg" class="profile-picture">
+         <h1>>Sunitha Florence</h1>
+         <p> IT student</p>          
+    </div>
+
+</header>
+<nav>
+    <ul>
+        <li>
+            <a href="#about"> About</a>
+        </li>
+        <li>
+             <a href="#education">Education </a>  
+        </li>
+        <li> <a href="#skills">Skills</a></li>
+        <li> <a href="#resume"> Resume</a></li>
+    </ul>
+    
+</nav>
+<section id="'Education">
+    <div class="section-content"> 
+    <h2>About me</h2>
+    <p> hello everyone ! this is SUNITHA AND I AM information techonology student.</p>
+</div> 
+</section>
+<section id="education">
+    <div class="section-content"> 
+     <h2> Bsc.IT</h2>
+     <p> RD National college of arts and science</p>
+    </div>
+</section>
+<section id="skills">
+    <div class="section-content">
+        <h2> Skills</h2>
+        <ul>
+            <li>java </li>
+            <li>c++ </li>
+            <li> C</li>
+            <li>HTML</li>
+            <li>python </li>
+            <li> JS</li>
+         </ul>
+    </div>
+</section>     
+<section id="Resume">
+    <center>
+        <div class="section-content">
+            <h2> Resume</h2>
+            <a href="https://docs.google.com/document/d/1xHf2SJQumU0Aee0tay6igbci1X2IDafh6ApSi8R27DI/edit?usp=sharing" class="download-button">
+
+            </a>
+        </div>
+    </center>
+
+</section>
+<footer>
+    <p> &copy; 2023 SUNITHA FlORENCE</p>
+</footer>
+<script>
+document.querySelectorall('a[href="#"]').foreach(anchor=>{
+    anchor.addEventListenner('click',function(e){ 
+        e.preventDefault();
+
+        const targetID=this.getAttribute('href').substring(1);
+        const targetElement=document.getElementById(targetId);
+
+        if(targetElement){
+            window.scrollTo{
+                top:targetElement.offsetTop,
+                behavior:'smooth'
+            });
+
+            
+}
+    });
+
+</script>
+</body>
+    </head>
+</html>
